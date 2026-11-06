@@ -9,8 +9,19 @@ Aplikasi manajemen produk dan inventaris berbasis *desktop* menggunakan **JavaFX
 ## Tampilan Aplikasi
 Berikut adalah contoh dari tampilan simulasi dari produk toko:
 
-### 1. Tampilan Utama (Input Data)
+### 1. Tampilan Form (Input Data)
 <p align="center">
+  <img src="SS/Form-produk.png" alt="Form Penambahan Produk" width="400">
+</p>
+
+### 2. Tampilan Detail (Detail Data)
+<p align="center">
+  <img src="SS/Detail-produk.png" alt="Detail dari Penambahan Produk" width="400">
+</p>
+
+### 3. Tampilan Daftar (Daftar Data)
+<p align="center">
+  <img src="SS/Daftar-produk.png" alt="Daftar Penambahan Produk" width="400">
 </p>
 
 ## Fitur Utama
@@ -34,29 +45,49 @@ Berikut adalah contoh dari tampilan simulasi dari produk toko:
 ```text
 TokoProduk/
 ├── pom.xml
+├── nbactions.xml
 ├── README.md
-├── .gitignore
 ├── SS/
-│   └── (Folder tangkapan layar / aset gambar)
+│   ├── Daftar-produk.png[cite: 1]
+│   ├── Detail-produk.png[cite: 1]
+│   └── Form-produk.png[cite: 1]
 └── src/
-    ├── main/
-    │   ├── java/
-    │   │   ├── kelas/
-    │   │   │   ├── Navigator.java
-    │   │   │   └── controller/
-    │   │   │       ├── DaftarController.java
-    │   │   │       ├── DetailController.java
-    │   │   │       └── FormController.java
-    │   │   ├── data/
-    │   │   │   └── DataProduk.java
-    │   │   └── Model/
-    │   │       └── produk.java
-    │   └── resources/
-    │       └── kelas/
-    │           ├── daftar.fxml
-    │           ├── detail.fxml
-    │           ├── form.fxml
-    │           └── styles/
-    │               └── app.css
-    └── test/
-        └── java/
+    └── main/
+        ├── java/
+        │   ├── Model/
+        │   │   └── produk.java[cite: 1]
+        │   ├── data/
+        │   │   └── DataProduk.java[cite: 1]
+        │   └── kelas/
+        │       ├── controller/
+        │       │   ├── DaftarController.java
+        │       │   ├── DetailController.java
+        │       │   └── FormController.java
+        │       ├── MainApp.java[cite: 1]
+        │       └── Navigator.java[cite: 1]
+        └── resources/
+            └── kelas/
+                ├── styles/
+                │   └── app.css[cite: 1]
+                ├── daftar.fxml[cite: 1]
+                ├── detail.fxml[cite: 1]
+                └── form.fxml[cite: 1]
+```
+
+## Persyaratan
+
+- JDK 26 atau versi yang kompatibel dengan konfigurasi proyek.
+- Maven.
+- JavaFX yang dikelola melalui dependensi Maven.
+
+## Cara Menjalankan
+
+1. Clone repositori.
+2. Buka folder proyek di NetBeans atau IDE yang mendukung Maven.
+3. Pastikan JDK yang digunakan sesuai dengan konfigurasi proyek.
+4. Tunggu Maven mengunduh dependensi yang diperlukan.
+5. Jalankan aplikasi menggunakan Maven
+
+## Lisensi
+
+Belum ditentukan.
